@@ -1,8 +1,8 @@
-function miFuncion(cant: number, valor: string): any {
+function miFuncion(cant: number, valor: string): string[] {
   let arreglo: string[] = new Array(cant);
   for (let i: number = 0; i < cant; i++) {
     arreglo[i] = valor;
-    console.log(arreglo);
   }
+  return arreglo;
 }
-miFuncion(3, "a");
+console.log(miFuncion(3, "a"));
